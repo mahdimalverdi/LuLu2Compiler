@@ -1,4 +1,4 @@
-grammar LuLu2Grammer;
+grammar LuLu2Grammar;
 program:REAL_CONST*;
 ID: ([a-zA-Z]|'#'|'_')([a-zA-Z0-9]|'#'|'_')*;
 KEYWORD: 'allocate'| 'bool'| 'break'| 'case'| 'const'| 'continue'| 'declare'| 'default'| 'destruct'| 'else'| 'false'| 'function'| 'float'| 'for'| 'if'| 'int'| 'nil'| 'of'| 'private'| 'protected'| 'public'| 'read'| 'return'| 'string'| 'super'| 'switch'| 'this'| 'true'| 'type'| 'while'| 'write';
