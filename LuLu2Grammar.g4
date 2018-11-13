@@ -5,6 +5,6 @@ KEYWORD: 'allocate'|'bool'|'break'|'case'|'const'|'continue'|'declare'|'default'
 INT_CONST: ('0'('X'|'x')[0-9A-Fa-f]+)|([0-9]+);
 EXPONENT: ('e'|'E')('+'|'-')?([0-9]+);
 REAL_CONST: (INT_CONST?'.'[0-9]*)EXPONENT?;
-ESC_CHAR:'\\n'|'\\r'|'\\\\'|'\\t'|'\\0'|'\\\'';
+ESC_CHAR:'\\n'|'\\r'|'\\\\'|'\\t'|'\\0'|'\\\''|('\\'('x'|'X')[0-9A-Fa-f]+);
 STRING_CONST: '\''(ESC_CHAR|[a-zA-Z0-9. ])*'\'';
 BOOL_CONST: 'true'|'false';
