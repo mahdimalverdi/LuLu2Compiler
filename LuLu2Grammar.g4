@@ -1,8 +1,10 @@
 grammar LuLu2Grammar;
-program:REAL_CONST;
+program:STRING_CONST;
 ID: ([a-zA-Z]|'#'|'_')([a-zA-Z0-9]|'#'|'_')*;
 KEYWORD: 'allocate'|'bool'|'break'|'case'|'const'|'continue'|'declare'|'default'|'destruct'|'else'|'false'|'function'|'float'|'for'|'if'|'int'|'nil'|'of'|'private'|'protected'|'public'|'read'|'return'|'string'|'super'|'switch'|'this'|'true'|'type'|'while'|'write';
 INT_CONST: ('0'('X'|'x')[0-9A-Fa-f]+)|([0-9]+);
 EXPONENT: ('e'|'E')('+'|'-')?([0-9]+);
 REAL_CONST: (INT_CONST?'.'[0-9]*)EXPONENT?;
-STRING_CONST: '‘'(|'\\n'|'\\r'|'\\\\'|'\\t'|'\\0'|'\\’')*?'’';
+ESC_CHAR:'\\n'|'\\r'|'\\\\'|'\\t'|'\\0'|'\\\'';
+STRING_CONST: '\''(ESC_CHAR|[a-zA-Z0-9. ])*'\'';
+BOOL_CONST: 'true'|'false';
