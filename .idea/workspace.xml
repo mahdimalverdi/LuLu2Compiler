@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/LuLu2Grammer.g4" line="50" mnemonic="7" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="92bb3cad-25aa-4103-ab64-9909cddfe498" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LuLu2Grammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/LuLu2Grammar.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LuLu2Grammer.g4" beforeDir="false" afterPath="$PROJECT_DIR$/LuLu2Grammer.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LuLu2Grammer.g4" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,15 +16,15 @@
     <session id="1825460196">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -42,12 +39,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="g4" value="711" />
+          <entry key="g4" value="1079" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ANTLR v4 grammar file" value="711" />
+          <entry key="ANTLR v4 grammar file" value="1079" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -59,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LuLu2Grammar.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
-              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            <state relative-caret-position="-85">
+              <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -76,6 +73,16 @@
       <find>'destruct'</find>
       <find>'this'</find>
       <find>const_val</find>
+      <find>')</find>
+      <find>'['</find>
+      <find>']'</find>
+      <find>'='</find>
+      <find>'.'</find>
+      <find>','</find>
+      <find>UNARY_OP</find>
+      <find>DOT</find>
+      <find>SYMBOL_DASH</find>
+      <find>binary_op</find>
     </findStrings>
     <replaceStrings>
       <replace>DECLARE</replace>
@@ -86,6 +93,16 @@
       <replace>DESTRUCT</replace>
       <replace>THIS</replace>
       <replace>KEYWORD</replace>
+      <replace>OPENING_PARENTHEISIS</replace>
+      <replace>CLOSING_PARENTHEISIS</replace>
+      <replace>OPENING_BRACKET</replace>
+      <replace>CLOSING_BRACKET</replace>
+      <replace>EQUAL</replace>
+      <replace>DOT</replace>
+      <replace>COLON</replace>
+      <replace>COMMA</replace>
+      <replace>SEMICOLON</replace>
+      <replace>SYMBOL_DOT</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -106,8 +123,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="951" />
-    <option name="width" value="978" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
@@ -115,6 +132,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -135,7 +153,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -177,11 +194,11 @@
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.03691275" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.062416106" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -243,8 +260,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LuLu2Grammar.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        <state relative-caret-position="-85">
+          <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
         </state>
       </provider>
     </entry>
