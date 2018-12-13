@@ -2,10 +2,10 @@ grammar LuLu2Grammar;
 program:ft_dcl? ft_def+;
 ft_dcl: KEYWORD_DECLARE OPENING_BRACE ( func_dcl | type_dcl | var_def )+ CLOSING_BRACE;
 func_dcl: ( OPENING_PARENTHEISIS args CLOSING_PARENTHEISIS SYMBOL_EQUAL )? ID OPENING_PARENTHEISIS ( args | args_var )? CLOSING_PARENTHEISIS SYMBOL_SEMICOLON;
-args : type ( OPENING_BRACKET CLOSING_BRACKET )* | args SYMBOL_COMMA type ( OPENING_BRACKET CLOSING_BRACKET )*;
-args_var : type ( OPENING_BRACKET CLOSING_BRACKET )* ID | args_var SYMBOL_COMMA type ( OPENING_BRACKET CLOSING_BRACKET )* ID;
+args : type_ ( OPENING_BRACKET CLOSING_BRACKET )* | args SYMBOL_COMMA type_ ( OPENING_BRACKET CLOSING_BRACKET )*;
+args_var : type_ ( OPENING_BRACKET CLOSING_BRACKET )* ID | args_var SYMBOL_COMMA type_ ( OPENING_BRACKET CLOSING_BRACKET )* ID;
 type_dcl : ID SYMBOL_SEMICOLON;
-var_def : KEYWORD_CONST? type var_val ( SYMBOL_COMMA var_val )* SYMBOL_SEMICOLON;
+var_def : KEYWORD_CONST? type_ var_val ( SYMBOL_COMMA var_val )* SYMBOL_SEMICOLON;
 var_val : ref ( SYMBOL_EQUAL expr)? ;
 ft_def : ( type_def | fun_def ) ;
 type_def : KEYWORD_TYPE ID ( SYMBOL_COLON ID )? OPENING_BRACE component+ CLOSING_BRACE ;
@@ -39,16 +39,16 @@ expr : OPENING_PARENTHEISIS expr CLOSING_PARENTHEISIS
         | KEYWORD_ALLOCATE handle_call
         | func_call
         | var
-        | list
+        | list_
         | KEYWORD_NIL;
 func_call : ( var SYMBOL_DOT )? handle_call | KEYWORD_READ OPENING_PARENTHEISIS var CLOSING_PARENTHEISIS | KEYWORD_WRITE OPENING_PARENTHEISIS var CLOSING_PARENTHEISIS;
-list : OPENING_BRACKET ( expr | list ) ( SYMBOL_COMMA ( expr| list ) )* CLOSING_BRACKET;
+list_ : OPENING_BRACKET ( expr | list_ ) ( SYMBOL_COMMA ( expr| list_ ) )* CLOSING_BRACKET;
 handle_call : ID OPENING_PARENTHEISIS params? CLOSING_PARENTHEISIS;
 params : expr | expr SYMBOL_COMMA params;
 cond_stmt : KEYWORD_IF expr block ( KEYWORD_ELSE block )?
         | KEYWORD_SWITCH var OPENING_BRACE ( KEYWORD_CASE INT_CONST SYMBOL_COLON block )* KEYWORD_DEFAULT SYMBOL_COLON block CLOSING_BRACE;
-loop_stmt : KEYWORD_FOR ( type? assign )? SYMBOL_SEMICOLON expr SYMBOL_SEMICOLON assign? block | KEYWORD_WHILE expr block;
-type : KEYWORD_INT
+loop_stmt : KEYWORD_FOR ( type_? assign )? SYMBOL_SEMICOLON expr SYMBOL_SEMICOLON assign? block | KEYWORD_WHILE expr block;
+type_ : KEYWORD_INT
         | KEYWORD_BOOL
         | KEYWORD_FLOAT
         | KEYWORD_STRING
@@ -125,7 +125,7 @@ KEYWORD_READ:'read';
 KEYWORD_WRITE:'write';
 KEYWORD_WHILE:'while';
 KEYWORD_ALLOCATE:'allocate';
-KEYWORD_TYPE:'type';
+KEYWORD_TYPE:'type_';
 KEYWORD_NIL:'nil';
 KEYWORD_IF:'if';
 KEYWORD_ELSE:'else';

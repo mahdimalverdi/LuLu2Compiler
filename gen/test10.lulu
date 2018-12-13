@@ -1,0 +1,63 @@
+%% be name khoda
+declare{
+    (int) = fib(bool v, string s);
+    lalalala la;
+}
+
+%% zombi ha az lulu nemitarsand
+(int n) = function fib(int n_){
+    if n_ <= 2 && n_ >= 3{
+        if m == n-3*-a {
+            (n) = 1;
+        }
+    }
+    else {
+        if b > 2 || !true {
+            %~
+            Calculating fibonacci recursively.
+            Fib[n] = Fib[n-1] + Fib[n-2]
+            ~%
+            (n) = fib(n_-1) + fib(n_-2);
+        }
+    }
+    return;
+}
+
+type db:bd{
+    private const string a[allocate b()], p[[[this.a.a.a], [((write(t)))]]][nil];
+    %~
+    Man an morghe siah balam.
+    Man an morghe siah balam. ~%
+    protected int a[b[c[d]]];
+}
+
+function fun (  ) {
+    %%Let's have some fun
+    string str = 'RTFM\X78\xF1';
+    
+}
+
+function alex(){
+    switch super.alex{
+        case 1:{
+            destruct [][] alex;
+        }
+        case 2:{
+            destruct [][][] karshenas;
+        }
+        case 3:{
+            const bool var = a *!b[d[3]+~W]-c/2|c(v(5,6))^3==3%a&3&&2||sds!=q>t>=y; 
+        }
+        default:{
+            book memo[n][m] = allocate book(); 
+        }
+    }
+}
+
+(float f, float e) = function yechizi(){
+    while e == f == e {
+        const float b, k;
+        int a[12], z[13][17];
+        return;
+    }
+}

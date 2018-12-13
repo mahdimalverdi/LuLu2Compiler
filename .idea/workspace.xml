@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92bb3cad-25aa-4103-ab64-9909cddfe498" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/LuLu2Compiler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LuLu2Compiler.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LuLu2Grammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/LuLu2Grammar.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/LuLu2Grammer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/LuLu2GrammerBaseListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/LuLu2GrammerBaseVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/LuLu2GrammerLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/LuLu2GrammerLexer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/LuLu2GrammerLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/LuLu2GrammerListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/LuLu2GrammerListener.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/LuLu2GrammerParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/LuLu2GrammerParser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/LuLu2GrammerVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/LuLu2GrammerVisitor.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,39 +25,58 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/LuLu2Compiler$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1544705928217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gen" />
+    <SUITE FILE_PATH="coverage/LuLu2Compiler$LuLu2GrammerLexer.coverage" NAME="LuLu2GrammerLexer Coverage Results" MODIFIED="1544704762109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gen" />
+    <SUITE FILE_PATH="coverage/LuLu2Compiler$test.coverage" NAME="test Coverage Results" MODIFIED="1544704798276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/LuLu2Compiler$LuLu2GrammerListener.coverage" NAME="LuLu2GrammerListener Coverage Results" MODIFIED="1544704809017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gen" />
+    <SUITE FILE_PATH="coverage/LuLu2Compiler$main.coverage" NAME="main Coverage Results" MODIFIED="1544711894724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gen" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1825460196">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="g4" value="3" />
+          <entry key="g4" value="4" />
+          <entry key="java" value="8" />
+          <entry key="lulu" value="1" />
+          <entry key="py" value="25" />
+          <entry key="tokens" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ANTLR v4 grammar file" value="3" />
+          <entry key="ANTLR v4 grammar file" value="4" />
+          <entry key="PLAIN_TEXT" value="17" />
+          <entry key="Python" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="g4" value="1081" />
+          <entry key="dummy" value="4" />
+          <entry key="g4" value="1110" />
+          <entry key="py" value="608" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ANTLR v4 grammar file" value="1081" />
+          <entry key="ANTLR v4 grammar file" value="1110" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="608" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -50,17 +84,54 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LuLu2Grammar.g4">
+        <entry file="file://$PROJECT_DIR$/gen/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="96" column="15" lean-forward="true" selection-start-line="96" selection-start-column="15" selection-end-line="96" selection-end-column="15" />
+            <state relative-caret-position="323">
+              <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/antlr4/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="15" column="81" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gen/LuLu2GrammarVisitor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gen/LuLu2GrammarParser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="242" column="24" selection-start-line="242" selection-start-column="6" selection-end-line="242" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -81,6 +152,11 @@
       <find>DOT</find>
       <find>SYMBOL_DASH</find>
       <find>binary_op</find>
+      <find>ProgramContext</find>
+      <find>list</find>
+      <find>enterRule</find>
+      <find>tree</find>
+      <find>arithmeticParser</find>
     </findStrings>
     <replaceStrings>
       <replace>DECLARE</replace>
@@ -101,6 +177,8 @@
       <replace>COMMA</replace>
       <replace>SEMICOLON</replace>
       <replace>SYMBOL_DOT</replace>
+      <replace>list_</replace>
+      <replace>LuLu2GrammarParser</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -110,7 +188,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/LuLu2Grammer.g4" />
+        <option value="$PROJECT_DIR$/gen/LuLu2GrammerLexer.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/gen/test.py" />
         <option value="$PROJECT_DIR$/LuLu2Grammar.g4" />
+        <option value="$PROJECT_DIR$/gen/LuLu2GrammarParser.py" />
+        <option value="$PROJECT_DIR$/gen/main.py" />
       </list>
     </option>
   </component>
@@ -121,8 +204,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
+    <option name="x" value="950" />
+    <option name="width" value="980" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
@@ -140,6 +223,11 @@
             </path>
             <path>
               <item name="LuLu2Compiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuLu2Compiler" type="462c0819:PsiDirectoryNode" />
+              <item name="gen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuLu2Compiler" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
@@ -154,14 +242,19 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="$PROJECT_DIR$/LuLu2Grammar.g4::/auto-gen" value="false" />
+    <property name="$PROJECT_DIR$/LuLu2Grammar.g4::/gen-listener" value="true" />
+    <property name="$PROJECT_DIR$/LuLu2Grammar.g4::/gen-visitor" value="true" />
+    <property name="$PROJECT_DIR$/LuLu2Grammar.g4::/language" value="Python3" />
     <property name="$PROJECT_DIR$/LuLu2Grammer.g4::/auto-gen" value="false" />
     <property name="$PROJECT_DIR$/LuLu2Grammer.g4::/gen-listener" value="true" />
     <property name="$PROJECT_DIR$/LuLu2Grammer.g4::/gen-visitor" value="true" />
     <property name="$PROJECT_DIR$/LuLu2Grammer.g4::/language" value="Python3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gen/test10.lulu" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -174,6 +267,134 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="LuLu2GrammerLexer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="LuLu2Compiler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gen" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gen/LuLu2GrammerLexer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LuLu2GrammerListener" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="LuLu2Compiler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gen" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gen/LuLu2GrammerListener.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="LuLu2Compiler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gen" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gen/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="LuLu2Compiler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gen" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\Projects\2018\LuLu2Compiler\LuLu2Compiler\gen\main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="LuLu2Compiler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.LuLu2GrammerLexer" />
+      <item itemvalue="Python.LuLu2GrammerListener" />
+      <item itemvalue="Python.test (1)" />
+      <item itemvalue="Python.main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.test (1)" />
+        <item itemvalue="Python.LuLu2GrammerListener" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.LuLu2GrammerLexer" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -192,12 +413,12 @@
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.062416106" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19261745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32867134" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -208,7 +429,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32867134" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="ANTLR Preview" order="13" visible="true" weight="0.32587412" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="13" weight="0.32587412" />
       <window_info anchor="bottom" id="Python Console" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -217,12 +438,12 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.03691275" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18993288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32867134" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -233,7 +454,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32867134" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="ANTLR Preview" order="13" visible="true" weight="0.32587412" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="13" weight="0.32587412" />
       <window_info anchor="bottom" id="Python Console" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -249,17 +470,94 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LuLu2Grammer.g4">
+    <entry file="file://$PROJECT_DIR$/LuLu2Grammer.g4" />
+    <entry file="file://$PROJECT_DIR$/gen/LuLu2GrammerVisitor.java" />
+    <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$PROJECT_DIR$/gen/LuLu2GrammerVisitor.py" />
+    <entry file="file://$PROJECT_DIR$/gen/LuLu2Grammer.tokens" />
+    <entry file="file://$PROJECT_DIR$/gen/LuLu2GrammerParser.py" />
+    <entry file="file://$PROJECT_DIR$/gen/LuLu2GrammerListener.java" />
+    <entry file="file://$PROJECT_DIR$/gen/LuLu2GrammerLexer.tokens" />
+    <entry file="file://$PROJECT_DIR$/gen/LuLu2GrammerListener.py" />
+    <entry file="file://$PROJECT_DIR$/gen/LuLu2GrammerLexer.py" />
+    <entry file="file://$PROJECT_DIR$/gen/LuLu2GrammarVisitor.java" />
+    <entry file="file://$PROJECT_DIR$/gen/LuLu2GrammarParser.java" />
+    <entry file="file://$PROJECT_DIR$/gen/LuLu2GrammarListener.java" />
+    <entry file="file://$PROJECT_DIR$/gen/LuLu2GrammarLexer.java" />
+    <entry file="file://$PROJECT_DIR$/gen/LuLu2GrammarBaseVisitor.java" />
+    <entry file="file://$PROJECT_DIR$/gen/LuLu2GrammarBaseListener.java" />
+    <entry file="file://$PROJECT_DIR$/Outputs/LuLu2Grammar.tokens" />
+    <entry file="file://$PROJECT_DIR$/Outputs/LuLu2GrammarLexer.py" />
+    <entry file="file://$PROJECT_DIR$/Outputs/LuLu2GrammarParser.py" />
+    <entry file="file://$PROJECT_DIR$/gen/test10.lulu">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/LuLu2Grammar.tokens">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/LuLu2GrammarLexer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="15" lean-forward="true" selection-end-line="74" />
+        <state relative-caret-position="204">
+          <caret line="355" column="38" selection-start-line="355" selection-start-column="38" selection-end-line="355" selection-end-column="38" />
+          <folding>
+            <element signature="e#203#16919#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/LuLu2GrammarLexer.tokens">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1670" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/antlr4/Parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="362" column="8" selection-start-line="362" selection-start-column="8" selection-end-line="362" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LuLu2Grammar.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="96" column="15" lean-forward="true" selection-start-line="96" selection-start-column="15" selection-end-line="96" selection-end-column="15" />
+        <state relative-caret-position="663">
+          <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/LuLu2GrammarListener.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/antlr4/tree/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/antlr4/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="15" column="81" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/LuLu2GrammarVisitor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/LuLu2GrammarParser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="242" column="24" selection-start-line="242" selection-start-column="6" selection-end-line="242" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
