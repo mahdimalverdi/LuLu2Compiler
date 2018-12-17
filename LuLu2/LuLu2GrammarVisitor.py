@@ -8,6 +8,7 @@ else:
 # This class defines a complete generic visitor for a parse tree produced by LuLu2GrammarParser.
 
 class LuLu2GrammarVisitor(ParseTreeVisitor):
+    level = 0
 
     # Visit a parse tree produced by LuLu2GrammarParser#program.
     def visitProgram(self, ctx:LuLu2GrammarParser.ProgramContext):
@@ -41,7 +42,16 @@ class LuLu2GrammarVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by LuLu2GrammarParser#var_def.
     def visitVar_def(self, ctx:LuLu2GrammarParser.Var_defContext):
-        return self.visitChildren(ctx)
+        defualt_value = "None"
+        i = 0
+        for var in ctx.var_val():
+            print("\t" * self.level,end="")
+            print(var.ref().ID(),"=",end="")
+            if var.expr() is not None:
+                self.visitExpr(var.expr())
+            else:
+                print(" "+defualt_value,end="")
+            print("")
 
 
     # Visit a parse tree produced by LuLu2GrammarParser#var_val.
@@ -56,8 +66,15 @@ class LuLu2GrammarVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by LuLu2GrammarParser#type_def.
     def visitType_def(self, ctx:LuLu2GrammarParser.Type_defContext):
-        return self.visitChildren(ctx)
-
+        print("\t" * self.level, end="")
+        print("class", ctx.ID(0), end="")
+        if(len(ctx.ID()) == 2):
+            print(" : ", ctx.ID(1), end="")
+        print(" : ")
+        self.level = self.level + 1
+        self.visitChildren(ctx)
+        self.level = self.level - 1
+        print("")
 
     # Visit a parse tree produced by LuLu2GrammarParser#component.
     def visitComponent(self, ctx:LuLu2GrammarParser.ComponentContext):
@@ -71,21 +88,51 @@ class LuLu2GrammarVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by LuLu2GrammarParser#fun_def.
     def visitFun_def(self, ctx:LuLu2GrammarParser.Fun_defContext):
+        print("def",ctx.ID(),end=" ")
+        flag = False
+        print("(",end="")
+        for arg in ctx.args_var():
+            if(flag):
+                print(", ", end="")
+            flag = True
+            print(arg.ID(),end="")
+        print(")",end="")
+        print(" : ",end="")
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by LuLu2GrammarParser#block.
     def visitBlock(self, ctx:LuLu2GrammarParser.BlockContext):
-        return self.visitChildren(ctx)
+        self.level = self.level + 1
+        print("")
+        tmp = self.visitChildren(ctx)
+        self.level = self.level - 1
+        print("")
+        return tmp
 
 
     # Visit a parse tree produced by LuLu2GrammarParser#stmt.
     def visitStmt(self, ctx:LuLu2GrammarParser.StmtContext):
-        return self.visitChildren(ctx)
+        print("\t" * self.level, end="")
+        tmp = self.visitChildren(ctx)
+        print("")
+        return tmp
 
 
     # Visit a parse tree produced by LuLu2GrammarParser#assign.
     def visitAssign(self, ctx:LuLu2GrammarParser.AssignContext):
+        flag = False
+        for var in ctx.var():
+            if(flag):
+                print(", ", end="")
+            flag = False
+            for ref in var.ref():
+                if(flag):
+                    print(".", end="")
+                flag = True
+                print(ref.ID(),end="")
+            flag = True
+        print(" = ", end="")
         return self.visitChildren(ctx)
 
 
@@ -101,6 +148,14 @@ class LuLu2GrammarVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by LuLu2GrammarParser#expr.
     def visitExpr(self, ctx:LuLu2GrammarParser.ExprContext):
+        if ctx.var() is not None:
+            flag = False
+            for ref in ctx.var().ref():
+                if (flag):
+                    print(".", end="")
+                flag = True
+                print(ref.ID(), end="")
+        print(" ", end="")
         return self.visitChildren(ctx)
 
 
@@ -126,7 +181,17 @@ class LuLu2GrammarVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by LuLu2GrammarParser#cond_stmt.
     def visitCond_stmt(self, ctx:LuLu2GrammarParser.Cond_stmtContext):
-        return self.visitChildren(ctx)
+        if ctx.KEYWORD_IF() is not None:
+            print("if",end=" ")
+            self.visitExpr(ctx.expr())
+            print(" :",end=" ")
+            self.visitBlock(ctx.block(0))
+            if ctx.KEYWORD_ELSE() is not None:
+                print("\t" * self.level, end="")
+                print("else :",end=" ")
+                self.visitBlock(ctx.block(1))
+
+
 
 
     # Visit a parse tree produced by LuLu2GrammarParser#loop_stmt.
@@ -141,6 +206,12 @@ class LuLu2GrammarVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by LuLu2GrammarParser#const_val.
     def visitConst_val(self, ctx:LuLu2GrammarParser.Const_valContext):
+        str = ctx.start.text
+        if str == "true":
+            str = "True"
+        if str == "false":
+            str = "False"
+        print(str, end=" ")
         return self.visitChildren(ctx)
 
 
@@ -151,46 +222,55 @@ class LuLu2GrammarVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by LuLu2GrammarParser#binary_op1.
     def visitBinary_op1(self, ctx:LuLu2GrammarParser.Binary_op1Context):
+        print(ctx.start.text, end=" ")
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by LuLu2GrammarParser#binary_op2.
     def visitBinary_op2(self, ctx:LuLu2GrammarParser.Binary_op2Context):
+        print(ctx.start.text, end=" ")
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by LuLu2GrammarParser#binary_op3.
     def visitBinary_op3(self, ctx:LuLu2GrammarParser.Binary_op3Context):
+        print(ctx.start.text,end=" ")
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by LuLu2GrammarParser#binary_op4.
     def visitBinary_op4(self, ctx:LuLu2GrammarParser.Binary_op4Context):
+        print(ctx.start.text, end=" ")
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by LuLu2GrammarParser#binary_op5.
     def visitBinary_op5(self, ctx:LuLu2GrammarParser.Binary_op5Context):
+        print(ctx.start.text,end=" ")
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by LuLu2GrammarParser#binary_op6.
     def visitBinary_op6(self, ctx:LuLu2GrammarParser.Binary_op6Context):
+        print(ctx.start.text,end=" ")
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by LuLu2GrammarParser#binary_op7.
     def visitBinary_op7(self, ctx:LuLu2GrammarParser.Binary_op7Context):
+        print(ctx.start.text,end=" ")
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by LuLu2GrammarParser#binary_op8.
     def visitBinary_op8(self, ctx:LuLu2GrammarParser.Binary_op8Context):
+        print("and ",end=" ")
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by LuLu2GrammarParser#binary_op9.
     def visitBinary_op9(self, ctx:LuLu2GrammarParser.Binary_op9Context):
+        print("or ",end=" ")
         return self.visitChildren(ctx)
 
 

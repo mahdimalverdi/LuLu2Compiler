@@ -1,8 +1,10 @@
 import sys
 from antlr4 import *
-from LuLu2GrammarLexer import LuLu2GrammarLexer
-from LuLu2GrammarListener import LuLu2GrammarListener
-from LuLu2GrammarParser import LuLu2GrammarParser
+from LuLu2.LuLu2GrammarParser import LuLu2GrammarParser
+from LuLu2.LuLu2GrammarListener import LuLu2GrammarListener
+from LuLu2.LuLu2GrammarLexer import LuLu2GrammarLexer
+from LuLu2.LuLu2GrammarVisitor import LuLu2GrammarVisitor
+
 from antlr4 import tree
 
 from pptree import *
@@ -22,16 +24,14 @@ def handleExpression(expr, level=0):
             root = tmp
 
 
+
 def main():
-    global root
     input = FileStream("test10.lulu")
     lexer = LuLu2GrammarLexer(input)
     stream = CommonTokenStream(lexer)
     parser = LuLu2GrammarParser(stream)
-    tree = parser.program()
-    root = Node(LuLu2GrammarParser.ruleNames[tree.getRuleIndex()])
-    handleExpression(tree)
-    print_tree(root)
+    visitor = LuLu2GrammarVisitor().visit(parser.program())
+
 
 if __name__ == '__main__':
     main()
