@@ -2,8 +2,8 @@ grammar LuLu2Grammar;
 program:ft_dcl? ft_def+;
 ft_dcl: KEYWORD_DECLARE OPENING_BRACE ( func_dcl | type_dcl | var_def )+ CLOSING_BRACE;
 func_dcl: ( OPENING_PARENTHEISIS args CLOSING_PARENTHEISIS SYMBOL_EQUAL )? ID OPENING_PARENTHEISIS ( args | args_var )? CLOSING_PARENTHEISIS SYMBOL_SEMICOLON;
-args : type_ ( OPENING_BRACKET CLOSING_BRACKET )* | args SYMBOL_COMMA type_ ( OPENING_BRACKET CLOSING_BRACKET )*;
-args_var : type_ ( OPENING_BRACKET CLOSING_BRACKET )* ID | args_var SYMBOL_COMMA type_ ( OPENING_BRACKET CLOSING_BRACKET )* ID;
+args : type_ array_brackets | args SYMBOL_COMMA type_ array_brackets;
+args_var : type_ array_brackets ID | args_var SYMBOL_COMMA type_ array_brackets ID;
 type_dcl : ID SYMBOL_SEMICOLON;
 var_def : KEYWORD_CONST? type_ var_val ( SYMBOL_COMMA var_val )* SYMBOL_SEMICOLON;
 var_val : ref ( SYMBOL_EQUAL expr)? ;
@@ -20,10 +20,10 @@ stmt :    assign SYMBOL_SEMICOLON
         | KEYWORD_RETURN SYMBOL_SEMICOLON
         | KEYWORD_BREAK SYMBOL_SEMICOLON
         | KEYWORD_CONTINUE SYMBOL_SEMICOLON
-        | KEYWORD_DESTRUCT ( OPENING_BRACKET CLOSING_BRACKET )* ID SYMBOL_SEMICOLON ;
+        | KEYWORD_DESTRUCT array_brackets ID SYMBOL_SEMICOLON ;
 assign : ( var | OPENING_PARENTHEISIS var ( SYMBOL_COMMA var )*CLOSING_PARENTHEISIS ) SYMBOL_EQUAL expr;
 var : ( ( KEYWORD_THIS | KEYWORD_SUPER ) SYMBOL_DOT )? ref ( SYMBOL_DOT ref )*;
-ref : ID ( OPENING_BRACKET expr CLOSING_BRACKET )*;
+ref : ID (array_brackets_with_size)*;
 expr : OPENING_PARENTHEISIS expr CLOSING_PARENTHEISIS
         | unary_op expr
         | expr binary_op1 expr
@@ -41,8 +41,8 @@ expr : OPENING_PARENTHEISIS expr CLOSING_PARENTHEISIS
         | var
         | list_
         | KEYWORD_NIL;
-func_call : ( var SYMBOL_DOT )? handle_call | KEYWORD_READ OPENING_PARENTHEISIS var CLOSING_PARENTHEISIS | KEYWORD_WRITE OPENING_PARENTHEISIS var CLOSING_PARENTHEISIS;
-list_ : OPENING_BRACKET ( expr | list_ ) ( SYMBOL_COMMA ( expr| list_ ) )* CLOSING_BRACKET;
+func_call : ( var SYMBOL_DOT )? handle_call;
+list_ : OPENING_BRACKET ( expr ) ( SYMBOL_COMMA ( expr ) )* CLOSING_BRACKET;
 handle_call : ID OPENING_PARENTHEISIS params? CLOSING_PARENTHEISIS;
 params : expr | expr SYMBOL_COMMA params;
 cond_stmt : KEYWORD_IF expr block ( KEYWORD_ELSE block )?
@@ -72,6 +72,8 @@ binary_op6 : SYMBOL_XOR;
 binary_op7 : SYMBOL_OR;
 binary_op8 : SYMBOL_LOGIC_AND;
 binary_op9 : SYMBOL_LOGIC_OR;
+array_brackets : ( OPENING_BRACKET CLOSING_BRACKET )*;
+array_brackets_with_size : OPENING_BRACKET expr CLOSING_BRACKET;
 OPENING_BRACE:'{';
 CLOSING_BRACE:'}';
 OPENING_PARENTHEISIS:'(';
@@ -121,8 +123,6 @@ KEYWORD_STRING:'string';
 KEYWORD_FUNCTION:'function';
 KEYWORD_CASE:'case';
 KEYWORD_DEFAULT:'default';
-KEYWORD_READ:'read';
-KEYWORD_WRITE:'write';
 KEYWORD_WHILE:'while';
 KEYWORD_ALLOCATE:'allocate';
 KEYWORD_TYPE:'type';

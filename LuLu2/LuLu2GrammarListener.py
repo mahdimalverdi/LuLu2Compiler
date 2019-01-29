@@ -7,6 +7,7 @@ else:
 
 # This class defines a complete listener for a parse tree produced by LuLu2GrammarParser.
 class LuLu2GrammarListener(ParseTreeListener):
+
     # Enter a parse tree produced by LuLu2GrammarParser#program.
     def enterProgram(self, ctx:LuLu2GrammarParser.ProgramContext):
         pass
@@ -135,7 +136,6 @@ class LuLu2GrammarListener(ParseTreeListener):
 
     # Enter a parse tree produced by LuLu2GrammarParser#stmt.
     def enterStmt(self, ctx:LuLu2GrammarParser.StmtContext):
-
         pass
 
     # Exit a parse tree produced by LuLu2GrammarParser#stmt.
@@ -217,7 +217,6 @@ class LuLu2GrammarListener(ParseTreeListener):
 
     # Enter a parse tree produced by LuLu2GrammarParser#cond_stmt.
     def enterCond_stmt(self, ctx:LuLu2GrammarParser.Cond_stmtContext):
-        print("if",end=" ")
         pass
 
     # Exit a parse tree produced by LuLu2GrammarParser#cond_stmt.
